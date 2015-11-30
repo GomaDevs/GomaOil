@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    >
+
+    <LinearLayout style="@style/TitleBar">
+        <ImageButton style="@style/TitleBarAction"
+            android:contentDescription="@string/description_home"
+            android:src="@drawable/title_home"
+            android:onClick="onClickHome" />
+        <ImageView style="@style/TitleBarSeparator" />
+        <ImageView style="@style/TitleBarLogo"
+            android:contentDescription="@string/description_logo"
+            android:src="@drawable/title_logo" />
+
+        <ImageView style="@style/TitleBarSeparator" />
+        <TextView style="@style/TitleBarText" />
+        <ImageButton style="@style/TitleBarAction"
+            android:contentDescription="@string/description_about"
+            android:src="@drawable/title_about"
+            android:onClick="onClickAbout" />
+        <ImageButton style="@style/TitleBarAction"
+            android:contentDescription="@string/description_search"
+            android:src="@drawable/title_search"
+            android:onClick="onClickSearch" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_weight="1"
+        android:paddingTop="7dp"
+        >
+
+    <EditText
+        android:id="@+id/edNomClient"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/nomclient"
+        android:textColorHint="#8a140e"
+        />
+    <EditText
+        android:id="@+id/edLongitude"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/longitude"
+        android:textColorHint="#8a140e"
+        />
+    <EditText
+        android:id="@+id/edLatitude"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/latitude"
+        android:textColorHint="#8a140e"
+        />
+    <EditText
+        android:id="@+id/edplaque"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/plaque"
+        android:textColorHint="#8a140e"
+        />
+    <EditText
+        android:id="@+id/edTypeVeh"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/type_vehicule"
+        android:textColorHint="#8a140e"
+        />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_weight="1"
+        >
+
+        <Button
+            android:id="@+id/btn_enregistrer"
+            android:text="@string/enregistrer"
+            style="@style/HomeButton"
+            />
+        <Button
+            android:id="@+id/btn_annuler"
+            android:text="@string/annuler"
+            style="@style/HomeButton"
+            />
+    </LinearLayout>
+
+</LinearLayout>

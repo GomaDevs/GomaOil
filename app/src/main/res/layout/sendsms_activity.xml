@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout style="@style/TitleBar">
+        <ImageButton style="@style/TitleBarAction"
+            android:contentDescription="@string/description_home"
+            android:src="@drawable/title_home"
+            android:onClick="onClickHome" />
+        <ImageView style="@style/TitleBarSeparator" />
+        <ImageView style="@style/TitleBarLogo"
+            android:contentDescription="@string/description_logo"
+            android:src="@drawable/title_logo" />
+
+        <ImageView style="@style/TitleBarSeparator" />
+        <TextView style="@style/TitleBarText" />
+        <ImageButton style="@style/TitleBarAction"
+            android:contentDescription="@string/description_about"
+            android:src="@drawable/title_about"
+            android:onClick="onClickAbout" />
+        <ImageButton style="@style/TitleBarAction"
+            android:contentDescription="@string/description_search"
+            android:src="@drawable/title_search"
+            android:onClick="onClickSearch" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="10dp">
+
+        <EditText
+            android:id="@+id/phoneNumber"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/hint_phone"
+            android:inputType="phone"
+            />
+
+
+        <EditText
+            android:id="@+id/messageText"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="140dp"
+            android:hint="@string/hint_message"
+            />
+
+        <Button
+            android:id="@+id/codeButton"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/hint_send_sms"
+            />
+
+
+        <!--
+
+        <Button
+            android:id="@+id/intentButton"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="Send SMS using Intent"/>
+
+        <Button
+            android:id="@+id/sendAndSaveButton"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="Send SMS using Code + Save in Sent"/>
+         -->
+    </LinearLayout>
+
+
+
+
+</LinearLayout>

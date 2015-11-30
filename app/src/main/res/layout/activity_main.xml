@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layoutroot"
+    android:orientation="vertical"
+    android:layout_height="fill_parent"
+    android:layout_width="fill_parent"
+    >
+    <!-- Ici on définit l'en-tête de notre interface
+     <ImageButton style="@style/TitleBarAction"
+            android:contentDescription="@string/description_home"
+            android:src="@drawable/title_home"
+            android:onClick="onClickHome" />
+            <ImageView style="@style/TitleBarSeparator" />
+     -->
+
+    <LinearLayout style="@style/TitleBar">
+        <ImageView style="@style/TitleBarSeparator" />
+        <ImageView style="@style/TitleBarLogo"
+            android:contentDescription="@string/description_logo"
+            android:src="@drawable/title_logo" />
+
+
+        <TextView style="@style/TitleBarText" />
+        <ImageButton style="@style/TitleBarAction"
+            android:contentDescription="@string/description_about"
+            android:src="@drawable/title_about"
+            android:onClick="onClickAbout" />
+        <ImageButton style="@style/TitleBarAction"
+            android:contentDescription="@string/description_search"
+            android:src="@drawable/title_search"
+            android:onClick="onClickSearch" />
+    </LinearLayout>
+
+
+    <!-- ******************************************* -->
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_weight="1"
+        >
+
+        <Button
+            android:id="@+id/btn_search"
+            android:text="@string/search_station"
+            style="@style/HomeButton"
+            android:onClick="onClickButton"
+            android:drawableTop="@drawable/search_station"
+             />
+        <Button
+            android:id="@+id/btn_abonner"
+            android:text="@string/abonner"
+            style="@style/HomeButton"
+            android:onClick="onClickButton"
+            android:drawableTop="@drawable/abonne"
+             />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_weight="1"
+        >
+
+        <Button
+            android:id="@+id/btn_pmt"
+            android:text="@string/paiement"
+            style="@style/HomeButton"
+            android:onClick="onClickButton"
+            android:drawableTop="@drawable/paiement"
+            />
+        <Button
+            android:id="@+id/btn_infos"
+            android:text="@string/info"
+            style="@style/HomeButton"
+            android:onClick="onClickButton"
+            android:drawableTop="@drawable/infos"
+            />
+    </LinearLayout>
+
+</LinearLayout>

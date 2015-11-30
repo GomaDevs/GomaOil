@@ -1,0 +1,46 @@
+<resources>
+    <string name="app_name">GomaOil</string>
+    <string name="action_settings">Settings</string>
+    <string name="search_station">Chercher Station</string>
+    <string name="abonner">Abonnement</string>
+    <string name="paiement">Paiement</string>
+    <string name="info">Infos</string>
+
+    <string name="description_about">About</string>
+    <string name="description_home">Home</string>
+    <string name="description_search">Search</string>
+    <string name="description_logo">Release</string>
+
+    <string name="nomclient">Nom du client :</string>
+    <string name="longitude">Longitude :</string>
+    <string name="latitude">Latitude :</string>
+    <string name="plaque">N° Plaque :</string>
+    <string name="type_vehicule">Type Vehicule :</string>
+    <string name="enregistrer">Enregistrer</string>
+    <string name="annuler">Annuler</string>
+    <string name="ui_menu_search">Chercher</string>
+    <string name="ui_menu_send">Envoyer</string>
+
+    <string name="title_activity_maps">Map</string>
+
+     <string name="about_intro">
+        <h1>About</h1>
+        <span>
+            <p>This software was created to allow officials jury universities to easily share messages via sms. It is designed by <a href="http://www.synatech.net/">SynaTech Corporation</a>
+			</p>
+		</span>
+		<span>
+		<h3>Synapse Technologies</h3>
+			<p>
+				Synapse Technologies is a start-up technology that can gather all information technology finally be able to serve, improve management systems and customer information aims. It is composed of three branches (SynapseTrainingCenter, SynapseHub, SynapseConsulting).
+				It was founded by two lovers of computers, Michel Isamuna (misamuna@gmail.com) and Olga Kinyamusitu (olga2k@gmail.com).
+			</p>
+		</span>
+    </string>
+    <string name="search_intro">Content for the Search page goes here.</string>
+
+    <string name="hint_phone">Enter phone number</string>
+    <string name="hint_message">Enter your message</string>
+    <string name="hint_send_sms">Envoyer sms</string>
+
+</resources>
